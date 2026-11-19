@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Section from "../components/Section";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import PokemonCard from "../components/PokemonCard";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
 
@@ -18,6 +19,10 @@ export default function About() {
 
       <Skills skills={skills} />
       <Projects projects={projects} />
+
+      <Section id="favorite-pokemon" title="My Favorite Pokémon">
+        <PokemonCard name="yveltal" />
+      </Section>
     </main>
   );
 }
